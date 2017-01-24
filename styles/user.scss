@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$font: 'Montserrat';
+$text-color: #d5dfe0; //#80888c;
+.modal-wrapper {
+  width: 60%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  // .adjust {
+  //  padding-left: 30px;
+  // }
+  .input {
+    margin-left: 40%;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: $font;
+  }
+  .usernames {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Montserrat", monospace;
+    color: $text-color;
+    padding-left:  153px;
+    font-size: 25px;
+    .twitter {
+      background-image: url('http://images1.fanpop.com/images/photos/2200000/Banner-twitter-2289985-800-295.jpg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+    }
+    .facebook {
+      background-image: url('http://www.phamousmedia.net/wp-content/uploads/2016/04/Facebook-banner.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+    }
+    .instagram {
+      background-image: url('https://loudcanvas.com/blog/wp-content/uploads/2015/03/banner-instagram.jpg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+    }
+    .tumblr {
+      background-image: url('http://imjustcreative.com/wp-content/uploads/2014/02/New-Tumblr-Logo-Design-1.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px;
+    }
+    .date {
+      padding-left: 50px;
+    }
+    .space {
+      padding-left: 20px;
+    }
+    .avatars {
+      width: 80px;
+    }
+    .text-names {
+      transition: .5s;
+      width: 230px;
+      padding-left: 25px;
+      padding-right: 30px;
+      &:hover {
+        color: grey;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(83,198,221,.5);
+    background-color: rgba(83,198,221,.7);
+}

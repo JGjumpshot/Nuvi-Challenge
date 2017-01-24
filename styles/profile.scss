@@ -1,0 +1,105 @@
+$font: 'Montserrat';
+
+.modal-wrapper2 {
+  width: 620px;
+
+  // background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  .profile-container {
+    display: flex;
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+    .modal-wrapper3 {
+      .top-info {
+        display: flex;
+      }
+      background-color: rgba(255, 255, 255, 1);
+      width: 500px;
+      // height: 250px;
+
+      .profile-name {
+        font-family: $font, monospace;
+        font-size: 27px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+      }
+      .activity-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        font-family: $font, monospace;
+        .likes {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .liked {
+          color: #53C6DD;
+        }
+        .comments {
+
+        }
+        .shares {
+
+        }
+      }
+      .description-wrap {
+        font-family: $font, monospace;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+
+      .provider {
+        font-family: $font, monospace;
+        display: flex;
+        justify-content: left;
+      }
+      .twitter {
+        background-image: url('http://images1.fanpop.com/images/photos/2200000/Banner-twitter-2289985-800-295.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+      }
+      .facebook {
+        background-image: url('http://www.phamousmedia.net/wp-content/uploads/2016/04/Facebook-banner.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+      }
+      .instagram {
+        background-image: url('https://loudcanvas.com/blog/wp-content/uploads/2015/03/banner-instagram.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+      }
+      .tumblr {
+        background-image: url('http://imjustcreative.com/wp-content/uploads/2014/02/New-Tumblr-Logo-Design-1.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+      }
+      .profile-usrname {
+        font-family: $font, monospace;
+        font-size: 20px;
+      }
+      .message {
+        font-family: $font, monospace;
+        text-align: center;
+        padding-top: 20px;
+        font-style: italic;
+        font-size: 15px;
+      }
+    }
+  }
+}

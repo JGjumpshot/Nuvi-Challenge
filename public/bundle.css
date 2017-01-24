@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.logo {
+  height: 21px;
+  padding: 9px 0px 0px 36px; }
+  .logo:hover {
+    cursor: pointer; }
+
+.header-wrapper {
+  float: right;
+  color: white;
+  font-family: "Montserrat", monospace;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  width: 400px; }
+  .header-wrapper .header-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 9px;
+    position: fixed;
+    width: 381px; }
+    .header-wrapper .header-container .nav {
+      width: auto;
+      transition: .2s;
+      cursor: pointer; }
+    .header-wrapper .header-container .nav:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease; }
+    .header-wrapper .header-container .nav:hover:after {
+      width: 100%;
+      background: white; }
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.body-wrap {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+body > img {
+  position: fixed;
+  z-index: -1;
+  width: 100vw; }
+
+.bar-wrap {
+  width: 32%;
+  padding-top: 47vh;
+  padding-left: 50px; }
+  .bar-wrap .bar {
+    width: 400px;
+    height: 68px;
+    background-color: #4d585e;
+    margin-top: 20px; }
+    .bar-wrap .bar p {
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      font-family: "Montserrat", monospace;
+      color: white;
+      transition: .2s;
+      cursor: pointer; }
+      .bar-wrap .bar p:hover {
+        color: #53c6dd; }
+
+.modal-wrapper2 {
+  width: 620px;
+  margin: 0 auto; }
+  .modal-wrapper2 .profile-container {
+    display: flex; }
+    .modal-wrapper2 .profile-container .profile-image {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px; }
+    .modal-wrapper2 .profile-container .modal-wrapper3 {
+      background-color: white;
+      width: 500px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .top-info {
+        display: flex; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .profile-name {
+        font-family: "Montserrat", monospace;
+        font-size: 27px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .activity-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        font-family: "Montserrat", monospace; }
+        .modal-wrapper2 .profile-container .modal-wrapper3 .activity-wrapper .likes:hover {
+          cursor: pointer; }
+        .modal-wrapper2 .profile-container .modal-wrapper3 .activity-wrapper .liked {
+          color: #53C6DD; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .description-wrap {
+        font-family: "Montserrat", monospace;
+        background-color: #fff;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .provider {
+        font-family: "Montserrat", monospace;
+        display: flex;
+        justify-content: left; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .twitter {
+        background-image: url("http://images1.fanpop.com/images/photos/2200000/Banner-twitter-2289985-800-295.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .facebook {
+        background-image: url("http://www.phamousmedia.net/wp-content/uploads/2016/04/Facebook-banner.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .instagram {
+        background-image: url("https://loudcanvas.com/blog/wp-content/uploads/2015/03/banner-instagram.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .tumblr {
+        background-image: url("http://imjustcreative.com/wp-content/uploads/2014/02/New-Tumblr-Logo-Design-1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .profile-usrname {
+        font-family: "Montserrat", monospace;
+        font-size: 20px; }
+      .modal-wrapper2 .profile-container .modal-wrapper3 .message {
+        font-family: "Montserrat", monospace;
+        text-align: center;
+        padding-top: 20px;
+        font-style: italic;
+        font-size: 15px; }
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.modal-wrapper {
+  width: 60%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+  .modal-wrapper .input {
+    margin-left: 40%;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Montserrat"; }
+  .modal-wrapper .usernames {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Montserrat", monospace;
+    color: #d5dfe0;
+    padding-left: 153px;
+    font-size: 25px; }
+    .modal-wrapper .usernames .twitter {
+      background-image: url("http://images1.fanpop.com/images/photos/2200000/Banner-twitter-2289985-800-295.jpg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px; }
+    .modal-wrapper .usernames .facebook {
+      background-image: url("http://www.phamousmedia.net/wp-content/uploads/2016/04/Facebook-banner.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px; }
+    .modal-wrapper .usernames .instagram {
+      background-image: url("https://loudcanvas.com/blog/wp-content/uploads/2015/03/banner-instagram.jpg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px; }
+    .modal-wrapper .usernames .tumblr {
+      background-image: url("http://imjustcreative.com/wp-content/uploads/2014/02/New-Tumblr-Logo-Design-1.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+      width: 100px; }
+    .modal-wrapper .usernames .date {
+      padding-left: 50px; }
+    .modal-wrapper .usernames .space {
+      padding-left: 20px; }
+    .modal-wrapper .usernames .avatars {
+      width: 80px; }
+    .modal-wrapper .usernames .text-names {
+      transition: .5s;
+      width: 230px;
+      padding-left: 25px;
+      padding-right: 30px; }
+      .modal-wrapper .usernames .text-names:hover {
+        color: grey;
+        cursor: pointer; }
+
+::-webkit-scrollbar {
+  width: 12px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(83, 198, 221, 0.5);
+  background-color: rgba(83, 198, 221, 0.7); }

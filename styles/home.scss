@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$font: 'Montserrat';
+.body-wrap {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body {
+  // background-image: url('https://www.nuvi.com/images/globe_night-bfb901bd.jpg');
+  width: 100vw;
+  height: 100vh;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body > img {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  // height: 100vh;
+
+}
+.bar-wrap {
+  width: 32%;
+  padding-top: 47vh;
+  padding-left: 50px;
+  .bar {
+    width: 400px;
+    height: 68px;
+    background-color: #4d585e;
+    // background-color: #323337;
+    margin-top: 20px;
+    p {
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+      font-family: $font, monospace;
+      color: white;
+      transition: .2s;
+      cursor: pointer;
+      &:hover {
+        color: #53c6dd;
+      }
+    }
+
+  }
+}

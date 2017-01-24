@@ -1,0 +1,35 @@
+<div class="modal-wrapper2">
+  <div class="profile-container">
+    <div class="modal-wrapper3">
+      <div class="top-info">
+        <img class="profile-image" ng-src="{{test2.actor_avator}}" alt="">
+        <div class="profile-name">
+          {{test2.actor_name}}
+        </div>
+      </div>
+      <h2 class="profile-usrname">Username: {{test2.actor_username}}</h2>
+      <p class="message" ng-hide="hider">{{test2.activity_message}}</p>
+      <img class="activity-attachment" ng-src="{{test2.activity_attachment}}" alt="">
+
+      <div class="activity-wrapper">
+        <div ng-click="grabId(test2.id)"  ng-class="{liked: liked}" class="likes">
+          Likes: {{test2.activity_likes + liked}}
+        </div>
+        <div class="shares">
+          Shares: {{test2.activity_shares}}
+        </div>
+        <div class="comments">
+          Comments: {{test2.activity_comments}}
+        </div>
+      </div>
+      <div class="description-wrap">
+        Description: {{test2.actor_description}}
+      </div>
+      <p class="provider">Provider:</p> <!--{{test2.provider}}-->
+      <div ng-class="{twitter: test2.provider === 'twitter', facebook: test2.provider === 'facebook', tumblr: test2.provider === 'tumblr', reddit: test2.provider === 'reddit', instagram: test2.provider === 'instagram'}" class="">
+
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,25 @@
+<div class="modal-wrapper">
+  <ul class="adjust">
+    <div>
+      <input class="input" type="text" name="Search" value="Search" placeholder="Search by Username" ng-model="filterAll">
+      <button ng-click="getNext50()" type="button" name=">">></button>
+    </div>
+
+    <li ng-repeat="person in people | filter: filterAll">
+      <div class="usernames">
+        <img class="avatars" ng-src="{{person.actor_avator}}" alt="">
+        <div class="text-names" ui-sref="profile({id: person.id})">{{person.actor_username}}</div>
+        <div ng-class="{twitter: person.provider === 'twitter', facebook: person.provider === 'facebook', tumblr: person.provider === 'tumblr', reddit: person.provider === 'reddit', instagram: person.provider === 'instagram'}">
+          <!-- {{person.provider}} -->
+        </div>
+        <div class="date">
+          {{person.activity_date | date: 'short'}}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="scrollbar" id="style-1">
+  <div class="scrollbar-thumb"></div>
+</div>
